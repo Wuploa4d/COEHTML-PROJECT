@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/spot.jpeg" type="image/x-icon">
+  <title>Sign up</title>
+</head>
+
+<body>
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>WuploadLLC. <span></span></h1>
+        <a href="#formproj" type="button" class="cta">Welcome</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  
+  <!-- Projects Section -->
+  <section id="formproj">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="form-section-title">sign<span>up</span></h1>
+      </div>
+      <div class="all-projects">
+        <form id="registration-form">
+          <div id="formbox">
+            <div>
+          <label for="username">Name:</label>
+          <input type="text" placeholder="insert your name" id="username" name="username" >
+            <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+          </div>
+        
+          <div>
+          <label for="email">E-mail:</label>
+          <input type="email" placeholder="insert your e-mail" id="email" name="email" class="inputs required" oninput="emailValidate()" required>
+          <span class="span-required">Digite um e-mail válido</span>
+         </div>
+          <div>
+          <label for="number">Mobile:</label>
+          <input type="tel" name="num" placeholder="Digite o seu numero de Telefone" id="tel" >
+          
+          </div>
+          <div>
+          <label for="password">Password:</label>
+          <input type="password" placeholder="insert your password" id="password" name="password" class="inputs required" oninput="passwordValidate()" required>
+          <span class="span-required">Digite uma senha com no minimo 8 caracteres</span>
+          </div>
+          <div>
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" placeholder="rewrite your password" id="confirm-password" name="confirm-password" class="inputs required" oninput="comparePassword()" required>
+          <span class="span-required">As senhas devem ser iguais</span>
+         </div>
+          <input type="submit" name="login" value="sign Up">
+         </div>
+        </form>
+        </div>
+      </div>
+      <p style="text-align: center; color: red;">Copyright © 2025 WuploadLLC. All the rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+
+</body>
+
+</html>
